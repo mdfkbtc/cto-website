@@ -229,7 +229,25 @@ iframe {
     }
 }
 
+/* Navbar Logo Styling */
+.navbar-logo {
+    width: 120px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Rounded logo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for effect */
+}
 
+.navbar-brand {
+    font-size: 1.5rem; /* Adjust font size of the title */
+    color: #ffffff; /* Ensure visibility against navbar background */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand:hover {
+    color: #ffcc00; /* Optional: Hover effect for title */
+}
 /* PARTNERS Section */
 .partners-section {
     background: #1c1c1c; /* Dark background */
