@@ -18,3 +18,16 @@ document.querySelector('.btn-buy-now').addEventListener('click', (e) => {
     // Uncomment if a link is required to scroll smoothly
     // document.querySelector('#buy-section').scrollIntoView({ behavior: 'smooth' });
 });
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').slice(1); // Remove '#' to get the ID
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
